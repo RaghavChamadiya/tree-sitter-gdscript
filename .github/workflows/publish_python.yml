@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pypa/cibuildwheel@v4
+      - uses: pypa/cibuildwheel@v4.2.0
         env:
           CIBW_ARCHS: ${{ matrix.archs }}
           # setup.py retags every CPython build as cp39-abi3, so a single build
